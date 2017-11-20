@@ -1,7 +1,7 @@
 {
-  "name": "trint-draft-js",
+  "name": "@trint/trint-draftjs",
   "description": "A React framework for building text editors.",
-  "version": "0.10.4",
+  "version": "0.10.5",
   "keywords": [
     "draftjs",
     "editor",
@@ -18,7 +18,7 @@
   ],
   "main": "lib/Draft.js",
   "style": "dist/Draft.css",
-  "repository": "facebook/draft-js",
+  "repository": "/trint-it/draft-js",
   "license": "BSD-3-Clause",
   "scripts": {
     "prepublish": "npm run build",
@@ -90,19 +90,12 @@
       "__DEV__": true
     },
     "rootDir": "./",
-    "roots": [
-      "<rootDir>/src/"
-    ],
+    "roots": ["<rootDir>/src/"],
     "transform": {
       ".*": "<rootDir>/scripts/jest/preprocessor.js"
     },
-    "modulePathIgnorePatterns": [
-      "<rootDir>/lib/",
-      "<rootDir>/node_modules/"
-    ],
-    "transformIgnorePatterns": [
-      "<rootDir>/node_modules/"
-    ],
+    "modulePathIgnorePatterns": ["<rootDir>/lib/", "<rootDir>/node_modules/"],
+    "transformIgnorePatterns": ["<rootDir>/node_modules/"],
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/fbjs/node_modules/",
       "<rootDir>/node_modules/fbjs/lib/UserAgent.js",
